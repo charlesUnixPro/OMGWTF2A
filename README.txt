@@ -9,15 +9,15 @@ MANIFEST
 README.txt     This file.
 coinFlip.c     Source code for application.
 Makefile       Makefile for application.
-ode-0.12/      Open Dynamics Engine source code, with hacked^H^H^H^H^H^H
-               customized drawstuff library.
+ode-0.12/      Open Dynamics Engine library and include files.
 coinFlip       64 bit Linux executable.
 coinFlip32     32 bit Linux executable.
 drawstuff.cpp,
 drawstuff.h,
 internal.h,
 version.h,
-x11.cpp        Source code for ode's drawstuff support code.
+x11.cpp        Source code for ode's drawstuff support code, hacked^H^H^H^H^H^H
+               customized.
 
 RUNNING THE APPLICATION
 =======================
@@ -27,8 +27,7 @@ virtual machine will probably not be a satisfying experience. It should
 compile correctly on a 32 bit machine. "coinFlip32" is a 32 bit Linux
 executable.
 
-The application requires that the ode, GL, GLU and X11 libraries be installed.
-(http://www.ode.org). 
+The application requires that the GL, GLU and X11 libraries be installed.
 
 Git the executable "coinFlip" or "coinFlip32" from github. Run it:
 
