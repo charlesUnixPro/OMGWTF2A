@@ -360,6 +360,7 @@ void dsPlatformSimLoop (int window_width, int window_height, dsFunctions *fn,
 
   dsStartGraphics (window_width,window_height,fn);
 
+#if 0
   static bool firsttime=true;
   if (firsttime)
   {
@@ -384,6 +385,7 @@ void dsPlatformSimLoop (int window_width, int window_height, dsFunctions *fn,
     );
     firsttime = false;
   }
+#endif
 
   if (fn->start) fn->start();
 
