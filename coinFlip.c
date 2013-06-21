@@ -3,8 +3,8 @@
 #include <math.h>
 #include <unistd.h>
 
-#include "./ode-0.12/include/ode/ode.h"
-#include "./ode-0.12/include/drawstuff/drawstuff.h"
+#include <ode/ode.h>
+#include "drawstuff.h"
 
 // dynamics and collision objects
 static dWorldID world;
@@ -110,7 +110,7 @@ int main (int argc, char * * argv)
     fn . step = & simLoop;
     fn . stop = 0;
     fn . command = 0;
-    fn . path_to_textures = "./ode-0.12/drawstuff/textures";
+    fn . path_to_textures = "./textures";
  
     dInitODE ();
 
