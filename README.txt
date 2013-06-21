@@ -11,25 +11,27 @@ coinFlip.c     Source code for application.
 Makefile       Makefile for application.
 ode-0.12/      Open Dynamics Engine source code, with hacked^H^H^H^H^H^H
                customized drawstuff library.
-
-SPECIAL NOTE ABOUT ode-0.12/
-============================
-
-The standard ode library distributions don't include the "drawstuff" library,
-which is intended as a development tool rather then an application framework.
-But the purposes of this contest (looming deadlines), I need the drawstuff
-code.
+coinFlip       64 bit Linux executable.
+coinFlip32     32 bit Linux executable.
+drawstuff.cpp,
+drawstuff.h,
+internal.h,
+version.h,
+x11.cpp        Source code for ode's drawstuff support code.
 
 RUNNING THE APPLICATION
 =======================
 
-This is a 64 bit Linux executable that does OpenGL graphics, so a remote
+"coinFlip" is a 64 bit Linux executable that does OpenGL graphics, so a remote
 virtual machine will probably not be a satisfying experience. It should
-compile fine correctly on a 32 bit machine.
+compile correctly on a 32 bit machine. "coinFlip32" is a 32 bit Linux
+executable.
 
-Git the executable "coinFlip" from github. Run it:
+Git the executable "coinFlip" or "coinFlip32" from github. Run it:
 
    ./coinFlip
+ or
+   ./coinFlip32
 
 The program will flip a coin and tell you the results.
 
