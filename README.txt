@@ -27,6 +27,9 @@ virtual machine will probably not be a satisfying experience. It should
 compile correctly on a 32 bit machine. "coinFlip32" is a 32 bit Linux
 executable.
 
+The application requires that the ode, GL, GLU and X11 libraries be installed.
+(http://www.ode.org). 
+
 Git the executable "coinFlip" or "coinFlip32" from github. Run it:
 
    ./coinFlip
@@ -42,7 +45,8 @@ will sometimes explode.
 ABOUT THE APPLICATION
 =====================
 
-The application flips a coin, using a physics simulation package. 
+The application flips a coin, using the ode physics simulation package
+(http://www.ode.org). 
 
 
 
