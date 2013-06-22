@@ -29,7 +29,8 @@ executable.
 
 The application requires that the GL, GLU and X11 libraries be installed.
 
-Git the executable "coinFlip" or "coinFlip32" from github. Run it:
+Git the executable "coinFlip" or "coinFlip32" and the textures/ subdirectory
+from github. Run it:
 
    ./coinFlip
  or
@@ -37,7 +38,7 @@ Git the executable "coinFlip" or "coinFlip32" from github. Run it:
 
 The program will flip a coin and tell you the results.
 
-However, the are some missing constraints in the model, and the simulation 
+NB: There are some missing constraints in the model, and the simulation 
 will sometimes explode.
 
 
